@@ -1,4 +1,4 @@
-output "mock" {
-  description = "Mock output example for the Cloud Posse Terraform component template"
-  value       = local.enabled ? "hello ${basename(abspath(path.module))}" : ""
+output "deployment" {
+  value       = kubernetes_deployment.operator
+  description = "Tail scale operator deployment K8S resource"
 }
