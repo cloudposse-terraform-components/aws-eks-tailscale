@@ -2,6 +2,6 @@
 _extends: .github
 repository:
   name: aws-eks-tailscale
-  description: '## Usage  **Stack Level**: Regional  Use this in the catalog or use these variables to overwrite the catalog values'
+  description: ''
   homepage: https://cloudposse.com/accelerate
   topics: terraform, terraform-component
