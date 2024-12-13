@@ -2,7 +2,7 @@
 tags:
 ---
 
-# Component: `eks`
+# Component: `eks-tailscale`
 
 ## Usage
 
