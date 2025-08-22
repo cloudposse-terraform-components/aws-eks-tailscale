@@ -4,6 +4,7 @@ tags:
 
 # Component: `eks-tailscale`
 
+
 ## Usage
 
 **Stack Level**: Regional
@@ -24,7 +25,10 @@ components:
 ```
 
 <!-- prettier-ignore-start -->
-<!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
+<!-- prettier-ignore-end -->
+
+
+<!-- markdownlint-disable -->
 ## Requirements
 
 | Name | Version |
@@ -120,11 +124,17 @@ components:
 | Name | Description |
 |------|-------------|
 | <a name="output_deployment"></a> [deployment](#output\_deployment) | Tail scale operator deployment K8S resource |
-<!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
-<!-- prettier-ignore-end -->
+<!-- markdownlint-restore -->
+
+
 
 ## References
 
-- https://github.com/Ealenn/tailscale
+
+- [https://github.com/Ealenn/tailscale](https://github.com/Ealenn/tailscale) - 
+
+
+
 
 [<img src="https://cloudposse.com/logo-300x69.svg" height="32" align="right"/>](https://cpco.io/homepage?utm_source=github&utm_medium=readme&utm_campaign=cloudposse-terraform-components/aws-eks-tailscale&utm_content=)
+
