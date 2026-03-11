@@ -9,12 +9,6 @@ variable "eks_component_name" {
   default     = "eks/cluster"
 }
 
-variable "chart_values" {
-  type        = any
-  description = "Addition map values to yamlencode as `helm_release` values."
-  default     = {}
-}
-
 variable "deployment_name" {
   type        = string
   description = "Name of the tailscale deployment, defaults to `tailscale` if this is null"
@@ -33,31 +27,8 @@ variable "image_tag" {
   default     = "latest"
 }
 
-variable "create_namespace" {
-  type        = bool
-  description = "Create the namespace if it does not yet exist. Defaults to `false`."
-  default     = false
-}
-
 variable "kubernetes_namespace" {
   type        = string
   description = "The namespace to install the release into."
 }
 
-variable "kube_secret" {
-  type        = string
-  description = "Kube Secret Name for tailscale"
-  default     = "tailscale"
-}
-
-variable "routes" {
-  type        = list(string)
-  description = "List of CIDR Ranges or IPs to allow Tailscale to connect to"
-  default     = []
-}
-
-variable "env" {
-  type        = map(string)
-  description = "Map of ENV vars in the format `key=value`. These ENV vars will be set in the `utils` provider before executing the data source"
-  default     = null
-}

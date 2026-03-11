@@ -2,7 +2,6 @@ locals {
   enabled          = module.this.enabled
   create_namespace = local.enabled
 
-  routes = join(",", concat(var.routes, [for k, v in data.aws_subnet.vpc_subnets : v.cidr_block]))
 }
 
 module "store_read" {
